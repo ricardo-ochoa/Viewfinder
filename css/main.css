@@ -1,0 +1,175 @@
+body{
+  margin: 0;
+  font-family: Barlow, sans-serif;
+}
+
+.hero{
+	color: white;
+	display: grid;
+	grid-template-columns: minmax(auto,1440px);
+	justify-content: center;
+}
+
+.hero-container{
+	display: grid;
+	grid-template-columns: 1fr 500px 1fr;
+	grid-template-areas: ". logo_header ."
+						 ". info ."
+						 ". cta ."
+						 ". terms powered";
+
+
+	grid-gap: 10px;
+
+}
+
+.info{
+	margin-top: 170px;
+
+	display: grid;
+	justify-content: center;
+
+	grid-area: info;
+}
+
+
+.titulo{
+	
+	display: grid;
+	justify-content: center;
+	grid-area: info;
+	margin: 0;
+	font-weight: normal;
+	font-size: 30px;
+	display: flex;
+	align-items: center;
+}
+
+.description {
+	display: grid;
+	justify-content: center;
+	
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 24px;
+}
+
+p{
+	margin: 0;
+}
+
+video{
+	opacity: 80%;
+  position: fixed;
+  min-width: 100%;
+  min-height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: -1;
+}
+
+header{
+	grid-area: logo_header;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 50px;
+}
+
+.logo_header {
+	display: grid;
+	justify-content: center;
+	grid-area: logo_header; 
+	width: 212px;
+	height: 40px;
+
+}
+
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.btn {
+  background: #FFFF00;
+  color: #090E14;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  font-family: Barlow;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 25px;
+	line-height: 30px;
+	width: 341px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+
+.cta {
+	margin-top: 170px;
+	grid-area: cta;
+	display: grid;
+	justify-content: center;
+}
+
+
+.terms{
+	margin-top: 25px;
+	display: grid;
+	justify-content: center;
+	grid-area: terms;
+	font-weight: 200;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.terms a {
+	color: white;
+
+}
+
+.powered{
+	font-weight: 300;
+	grid-area: powered;
+	display: grid;
+	justify-content: center;
+
+	align-content: end;
+}
+.animation{
+	margin-top: 30px;
+	margin-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+	.hero-container {
+		grid-template-columns: 1fr 500px 1fr;
+	grid-template-areas: ". logo_header ."
+						 ". info ."
+						 ". cta ."
+						 ". terms ."
+						 ". powered .";
+	}
+}
+
+.icon-logo_punk{
+	font-size: 16px;
+	margin-top: 10px;
+	margin-left: 2px;
+}
+
+.icon-volumen {
+	margin-top: 5px;
+	margin-right: 15px;
+}
+
+
+
+
+
