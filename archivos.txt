@@ -1,1 +1,3 @@
 Archivos de Yellowjacket-Viewfinder Punk.solutions
+
+En ralidad sólo es el home del sitio.
